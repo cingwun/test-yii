@@ -101,7 +101,7 @@ class SiteController extends Controller
 
     public function actionEntry() {
         $model = new EntryForm;
-
+        echo "aaa";
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             return $this->render('entry-confirm', ['model' => $model]);
         } else {
