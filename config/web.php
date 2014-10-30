@@ -37,9 +37,13 @@ $config = [
                 ],
             ],
         ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => true,
+        ],
         'db' => require(__DIR__ . '/db.php'),
     ],
-    'params' => $params,
+    'params' => $params
 ];
 
 if (YII_ENV_DEV) {
